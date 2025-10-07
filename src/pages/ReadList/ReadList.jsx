@@ -27,7 +27,7 @@ const ReadList = () => {
       setReadList(sortedByPage);
     }
     if (type === "ratings") {
-        const sortedByrating=[...readList].sort((a,b)=>a.rating-b.rating)
+        const sortedByrating=[...readList].sort((a,b)=>a.rating-b.rating)     // reverse a and b  for descending order sorting
         setReadList(sortedByrating);
     }
   };
